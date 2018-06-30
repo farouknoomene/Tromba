@@ -31,7 +31,7 @@ class DefaultController extends Controller
         $entretien->setDate(new \DateTime($request->get('dateentre')));
         $entretien->setHeure($request->get('heure').":".$request->get('minute'));
         $entretien->setType($request->get('type'));
-        $entretien->setEtat(0);
+        $entretien->setEtat(1);
         $em->persist($entretien);
         $em->flush();
         return $this->redirectToRoute('listcandidats');

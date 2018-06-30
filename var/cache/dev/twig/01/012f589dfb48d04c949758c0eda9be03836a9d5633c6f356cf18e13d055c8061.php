@@ -15,11 +15,11 @@ class __TwigTemplate_99efd9af2d4f814a902ca4d21d2a1e9b6b95ee270bb4ee5948208b241ea
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_dc7b666f9d04fc8acf22a9925e9bfaef5444321c1712a9c5d955609041988c4a = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_dc7b666f9d04fc8acf22a9925e9bfaef5444321c1712a9c5d955609041988c4a->enter($__internal_dc7b666f9d04fc8acf22a9925e9bfaef5444321c1712a9c5d955609041988c4a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "RHBundle:Default:AffecterEntret.html.twig"));
+        $__internal_6157c69f7019a0e1f330bdc00992e250300e375508aff705a12dc46e91eaf5b0 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_6157c69f7019a0e1f330bdc00992e250300e375508aff705a12dc46e91eaf5b0->enter($__internal_6157c69f7019a0e1f330bdc00992e250300e375508aff705a12dc46e91eaf5b0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "RHBundle:Default:AffecterEntret.html.twig"));
 
-        $__internal_f0591773a726b67bc155b5f7e8eb3e201fbb4459596c0b425fa1975169047db6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f0591773a726b67bc155b5f7e8eb3e201fbb4459596c0b425fa1975169047db6->enter($__internal_f0591773a726b67bc155b5f7e8eb3e201fbb4459596c0b425fa1975169047db6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "RHBundle:Default:AffecterEntret.html.twig"));
+        $__internal_01e80e9d33c9d7334a6d2889fa49236c0a94037e0a30eb91b2f18a410722ba6e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_01e80e9d33c9d7334a6d2889fa49236c0a94037e0a30eb91b2f18a410722ba6e->enter($__internal_01e80e9d33c9d7334a6d2889fa49236c0a94037e0a30eb91b2f18a410722ba6e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "RHBundle:Default:AffecterEntret.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -55,9 +55,9 @@ class __TwigTemplate_99efd9af2d4f814a902ca4d21d2a1e9b6b95ee270bb4ee5948208b241ea
             <tr>
                 <td>Heure : </td>
                 <td>
-                    <input type=\"text\" max=\"24\" name=\"heure\" min=\"0\">
+                    <input type=\"text\"name=\"heure\">
                     :
-                    <input type=\"text\" max=\"59\" min=\"0\" name=\"minute\">
+                    <input type=\"text\"name=\"minute\">
                 </td>
             </tr>
         </table>
@@ -66,10 +66,10 @@ class __TwigTemplate_99efd9af2d4f814a902ca4d21d2a1e9b6b95ee270bb4ee5948208b241ea
 </body>
 </html>";
         
-        $__internal_dc7b666f9d04fc8acf22a9925e9bfaef5444321c1712a9c5d955609041988c4a->leave($__internal_dc7b666f9d04fc8acf22a9925e9bfaef5444321c1712a9c5d955609041988c4a_prof);
+        $__internal_6157c69f7019a0e1f330bdc00992e250300e375508aff705a12dc46e91eaf5b0->leave($__internal_6157c69f7019a0e1f330bdc00992e250300e375508aff705a12dc46e91eaf5b0_prof);
 
         
-        $__internal_f0591773a726b67bc155b5f7e8eb3e201fbb4459596c0b425fa1975169047db6->leave($__internal_f0591773a726b67bc155b5f7e8eb3e201fbb4459596c0b425fa1975169047db6_prof);
+        $__internal_01e80e9d33c9d7334a6d2889fa49236c0a94037e0a30eb91b2f18a410722ba6e->leave($__internal_01e80e9d33c9d7334a6d2889fa49236c0a94037e0a30eb91b2f18a410722ba6e_prof);
 
     }
 
@@ -125,9 +125,9 @@ class __TwigTemplate_99efd9af2d4f814a902ca4d21d2a1e9b6b95ee270bb4ee5948208b241ea
             <tr>
                 <td>Heure : </td>
                 <td>
-                    <input type=\"text\" max=\"24\" name=\"heure\" min=\"0\">
+                    <input type=\"text\"name=\"heure\">
                     :
-                    <input type=\"text\" max=\"59\" min=\"0\" name=\"minute\">
+                    <input type=\"text\"name=\"minute\">
                 </td>
             </tr>
         </table>
