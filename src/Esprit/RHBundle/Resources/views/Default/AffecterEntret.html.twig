@@ -6,7 +6,7 @@
 </head>
 <body>
     <h2>Affecter un entretien a {{ cand.nom ~' '~ cand.prenom }}</h2>
-    <form action="" method="post">
+    <form action="{{ path('affecterentredb',{cin : cand.cin }) }}" method="post">
         <table border="0">
             <tr>
                 <td>Type : </td>

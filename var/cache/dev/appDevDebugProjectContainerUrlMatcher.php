@@ -117,9 +117,17 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'Esprit\\RHBundle\\Controller\\DefaultController::listCandidatsAction',  '_route' => 'listcandidats',);
         }
 
-        // showformentretient
-        if (0 === strpos($pathinfo, '/affecter') && preg_match('#^/affecter/(?P<cin>[^/]++)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'showformentretient')), array (  '_controller' => 'Esprit\\RHBundle\\Controller\\DefaultController::affecterFormAction',));
+        if (0 === strpos($pathinfo, '/affecter')) {
+            // showformentretient
+            if (preg_match('#^/affecter/(?P<cin>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'showformentretient')), array (  '_controller' => 'Esprit\\RHBundle\\Controller\\DefaultController::affecterFormAction',));
+            }
+
+            // affecterentredb
+            if (0 === strpos($pathinfo, '/affectertoDb') && preg_match('#^/affectertoDb/(?P<cin>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'affecterentredb')), array (  '_controller' => 'Esprit\\RHBundle\\Controller\\DefaultController::affecterDBAction',));
+            }
+
         }
 
         // homepage

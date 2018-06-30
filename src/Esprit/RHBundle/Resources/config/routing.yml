@@ -10,3 +10,7 @@ showformentretient:
     path: /affecter/{cin}
     defaults: { _controller:  RHBundle:Default:affecterForm }
 
+affecterentredb:
+    path: /affectertoDb/{cin}
+    defaults: { _controller:  RHBundle:Default:affecterDB }
+

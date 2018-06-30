@@ -15,11 +15,11 @@ class __TwigTemplate_99efd9af2d4f814a902ca4d21d2a1e9b6b95ee270bb4ee5948208b241ea
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_33cf9023418066344c58d36089c41d04f63be97514325a6a08c88a3f69757a1d = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_33cf9023418066344c58d36089c41d04f63be97514325a6a08c88a3f69757a1d->enter($__internal_33cf9023418066344c58d36089c41d04f63be97514325a6a08c88a3f69757a1d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "RHBundle:Default:AffecterEntret.html.twig"));
+        $__internal_0fbc10ef1b1bf1287b72bfe9986f5d9814ff7121c894eb2eda27e9efbeba2774 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_0fbc10ef1b1bf1287b72bfe9986f5d9814ff7121c894eb2eda27e9efbeba2774->enter($__internal_0fbc10ef1b1bf1287b72bfe9986f5d9814ff7121c894eb2eda27e9efbeba2774_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "RHBundle:Default:AffecterEntret.html.twig"));
 
-        $__internal_80612db222825cd74ee152a8f50f22cd99a0d80b705f6f35c942a0a7a79d1807 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_80612db222825cd74ee152a8f50f22cd99a0d80b705f6f35c942a0a7a79d1807->enter($__internal_80612db222825cd74ee152a8f50f22cd99a0d80b705f6f35c942a0a7a79d1807_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "RHBundle:Default:AffecterEntret.html.twig"));
+        $__internal_4529607faa76a43238db84e3930fb9699caae2b23afc4b971004bde40b55bcee = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_4529607faa76a43238db84e3930fb9699caae2b23afc4b971004bde40b55bcee->enter($__internal_4529607faa76a43238db84e3930fb9699caae2b23afc4b971004bde40b55bcee_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "RHBundle:Default:AffecterEntret.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -33,7 +33,10 @@ class __TwigTemplate_99efd9af2d4f814a902ca4d21d2a1e9b6b95ee270bb4ee5948208b241ea
         // line 8
         echo twig_escape_filter($this->env, (($this->getAttribute(($context["cand"] ?? $this->getContext($context, "cand")), "nom", array()) . " ") . $this->getAttribute(($context["cand"] ?? $this->getContext($context, "cand")), "prenom", array())), "html", null, true);
         echo "</h2>
-    <form action=\"\" method=\"post\">
+    <form action=\"";
+        // line 9
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("affecterentredb", array("cin" => $this->getAttribute(($context["cand"] ?? $this->getContext($context, "cand")), "cin", array()))), "html", null, true);
+        echo "\" method=\"post\">
         <table border=\"0\">
             <tr>
                 <td>Type : </td>
@@ -63,10 +66,10 @@ class __TwigTemplate_99efd9af2d4f814a902ca4d21d2a1e9b6b95ee270bb4ee5948208b241ea
 </body>
 </html>";
         
-        $__internal_33cf9023418066344c58d36089c41d04f63be97514325a6a08c88a3f69757a1d->leave($__internal_33cf9023418066344c58d36089c41d04f63be97514325a6a08c88a3f69757a1d_prof);
+        $__internal_0fbc10ef1b1bf1287b72bfe9986f5d9814ff7121c894eb2eda27e9efbeba2774->leave($__internal_0fbc10ef1b1bf1287b72bfe9986f5d9814ff7121c894eb2eda27e9efbeba2774_prof);
 
         
-        $__internal_80612db222825cd74ee152a8f50f22cd99a0d80b705f6f35c942a0a7a79d1807->leave($__internal_80612db222825cd74ee152a8f50f22cd99a0d80b705f6f35c942a0a7a79d1807_prof);
+        $__internal_4529607faa76a43238db84e3930fb9699caae2b23afc4b971004bde40b55bcee->leave($__internal_4529607faa76a43238db84e3930fb9699caae2b23afc4b971004bde40b55bcee_prof);
 
     }
 
@@ -82,7 +85,7 @@ class __TwigTemplate_99efd9af2d4f814a902ca4d21d2a1e9b6b95ee270bb4ee5948208b241ea
 
     public function getDebugInfo()
     {
-        return array (  34 => 8,  25 => 1,);
+        return array (  38 => 9,  34 => 8,  25 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -103,7 +106,7 @@ class __TwigTemplate_99efd9af2d4f814a902ca4d21d2a1e9b6b95ee270bb4ee5948208b241ea
 </head>
 <body>
     <h2>Affecter un entretien a {{ cand.nom ~' '~ cand.prenom }}</h2>
-    <form action=\"\" method=\"post\">
+    <form action=\"{{ path('affecterentredb',{cin : cand.cin }) }}\" method=\"post\">
         <table border=\"0\">
             <tr>
                 <td>Type : </td>
