@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h2>Affecter un entretien a {{ cand.nom ~' '~ cand.prenom }}</h2>
+    <form action="" method="post">
+        <table border="0">
+            <tr>
+                <td>Type : </td>
+                <td>
+                    <select name="type">
+                        <option value="Technique Niveau 1">Technique Niveau 1</option>
+                        <option value="Technique Niveau 2">Technique Niveau 2</option>
+                        <option value="RH">RH</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Date : </td>
+                <td><input type="date" name="dateentre"></td>
+            </tr>
+            <tr>
+                <td>Heure : </td>
+                <td>
+                    <input type="number" max="24" name="heure" min="0">
+                    :
+                    <input type="number" max="59" min="0" name="minute">
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Valider">
+    </form>
+</body>
+</html>

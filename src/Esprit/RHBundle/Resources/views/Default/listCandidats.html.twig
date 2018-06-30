@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<table border="1">
+    <thead>
+        <tr>
+            <td>CIN</td>
+            <td>Nom</td>
+            <td>Prenom</td>
+            <td>Experience</td>
+            <td>Specialité</td>
+            <td></td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for i in cand %}
+            <tr>
+                <td>{{ i.cin }}</td>
+                <td>{{ i.nom }}</td>
+                <td>{{ i.prenom }}</td>
+                <td>{{ i.experience }}</td>
+                <td>{{ i.specialite }}</td>
+                <td><a href="{{ path('showformentretient',{ cin : i.cin }) }}">Affecter un entretien</a></td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

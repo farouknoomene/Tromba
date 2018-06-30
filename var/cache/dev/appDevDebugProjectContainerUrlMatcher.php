@@ -103,6 +103,25 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
+        // rh_homepage
+        if ('' === $trimmedPathinfo) {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($rawPathinfo.'/', 'rh_homepage');
+            }
+
+            return array (  '_controller' => 'Esprit\\RHBundle\\Controller\\DefaultController::indexAction',  '_route' => 'rh_homepage',);
+        }
+
+        // listcandidats
+        if ('/list_cand' === $pathinfo) {
+            return array (  '_controller' => 'Esprit\\RHBundle\\Controller\\DefaultController::listCandidatsAction',  '_route' => 'listcandidats',);
+        }
+
+        // showformentretient
+        if (0 === strpos($pathinfo, '/affecter') && preg_match('#^/affecter/(?P<cin>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'showformentretient')), array (  '_controller' => 'Esprit\\RHBundle\\Controller\\DefaultController::affecterFormAction',));
+        }
+
         // homepage
         if ('' === $trimmedPathinfo) {
             if (substr($pathinfo, -1) !== '/') {

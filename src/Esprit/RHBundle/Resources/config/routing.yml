@@ -1,0 +1,12 @@
+rh_homepage:
+    path:     /
+    defaults: { _controller: RHBundle:Default:index }
+
+listcandidats:
+    path: /list_cand
+    defaults: { _controller:  RHBundle:Default:listCandidats  }
+
+showformentretient:
+    path: /affecter/{cin}
+    defaults: { _controller:  RHBundle:Default:affecterForm }
+

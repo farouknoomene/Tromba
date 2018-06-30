@@ -1,3 +1,7 @@
+rh:
+    resource: "@RHBundle/Resources/config/routing.yml"
+    prefix:   /
+
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
