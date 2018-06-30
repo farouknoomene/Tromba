@@ -15,11 +15,11 @@ class __TwigTemplate_99efd9af2d4f814a902ca4d21d2a1e9b6b95ee270bb4ee5948208b241ea
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_0fbc10ef1b1bf1287b72bfe9986f5d9814ff7121c894eb2eda27e9efbeba2774 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_0fbc10ef1b1bf1287b72bfe9986f5d9814ff7121c894eb2eda27e9efbeba2774->enter($__internal_0fbc10ef1b1bf1287b72bfe9986f5d9814ff7121c894eb2eda27e9efbeba2774_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "RHBundle:Default:AffecterEntret.html.twig"));
+        $__internal_dc7b666f9d04fc8acf22a9925e9bfaef5444321c1712a9c5d955609041988c4a = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_dc7b666f9d04fc8acf22a9925e9bfaef5444321c1712a9c5d955609041988c4a->enter($__internal_dc7b666f9d04fc8acf22a9925e9bfaef5444321c1712a9c5d955609041988c4a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "RHBundle:Default:AffecterEntret.html.twig"));
 
-        $__internal_4529607faa76a43238db84e3930fb9699caae2b23afc4b971004bde40b55bcee = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_4529607faa76a43238db84e3930fb9699caae2b23afc4b971004bde40b55bcee->enter($__internal_4529607faa76a43238db84e3930fb9699caae2b23afc4b971004bde40b55bcee_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "RHBundle:Default:AffecterEntret.html.twig"));
+        $__internal_f0591773a726b67bc155b5f7e8eb3e201fbb4459596c0b425fa1975169047db6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_f0591773a726b67bc155b5f7e8eb3e201fbb4459596c0b425fa1975169047db6->enter($__internal_f0591773a726b67bc155b5f7e8eb3e201fbb4459596c0b425fa1975169047db6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "RHBundle:Default:AffecterEntret.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -55,9 +55,9 @@ class __TwigTemplate_99efd9af2d4f814a902ca4d21d2a1e9b6b95ee270bb4ee5948208b241ea
             <tr>
                 <td>Heure : </td>
                 <td>
-                    <input type=\"number\" max=\"24\" name=\"heure\" min=\"0\">
+                    <input type=\"text\" max=\"24\" name=\"heure\" min=\"0\">
                     :
-                    <input type=\"number\" max=\"59\" min=\"0\" name=\"minute\">
+                    <input type=\"text\" max=\"59\" min=\"0\" name=\"minute\">
                 </td>
             </tr>
         </table>
@@ -66,10 +66,10 @@ class __TwigTemplate_99efd9af2d4f814a902ca4d21d2a1e9b6b95ee270bb4ee5948208b241ea
 </body>
 </html>";
         
-        $__internal_0fbc10ef1b1bf1287b72bfe9986f5d9814ff7121c894eb2eda27e9efbeba2774->leave($__internal_0fbc10ef1b1bf1287b72bfe9986f5d9814ff7121c894eb2eda27e9efbeba2774_prof);
+        $__internal_dc7b666f9d04fc8acf22a9925e9bfaef5444321c1712a9c5d955609041988c4a->leave($__internal_dc7b666f9d04fc8acf22a9925e9bfaef5444321c1712a9c5d955609041988c4a_prof);
 
         
-        $__internal_4529607faa76a43238db84e3930fb9699caae2b23afc4b971004bde40b55bcee->leave($__internal_4529607faa76a43238db84e3930fb9699caae2b23afc4b971004bde40b55bcee_prof);
+        $__internal_f0591773a726b67bc155b5f7e8eb3e201fbb4459596c0b425fa1975169047db6->leave($__internal_f0591773a726b67bc155b5f7e8eb3e201fbb4459596c0b425fa1975169047db6_prof);
 
     }
 
@@ -125,9 +125,9 @@ class __TwigTemplate_99efd9af2d4f814a902ca4d21d2a1e9b6b95ee270bb4ee5948208b241ea
             <tr>
                 <td>Heure : </td>
                 <td>
-                    <input type=\"number\" max=\"24\" name=\"heure\" min=\"0\">
+                    <input type=\"text\" max=\"24\" name=\"heure\" min=\"0\">
                     :
-                    <input type=\"number\" max=\"59\" min=\"0\" name=\"minute\">
+                    <input type=\"text\" max=\"59\" min=\"0\" name=\"minute\">
                 </td>
             </tr>
         </table>

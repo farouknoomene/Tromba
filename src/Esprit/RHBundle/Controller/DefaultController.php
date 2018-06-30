@@ -28,9 +28,10 @@ class DefaultController extends Controller
         $em = $this->getDoctrine()->getManager();
         $entretien = new Entretient();
         $entretien->setCin($em->getRepository(Candidat::class)->findOneBy(array("cin" => $cin)));
-        $entretien->setDate($request->get('dateentre'));
+        $entretien->setDate(new \DateTime($request->get('dateentre')));
         $entretien->setHeure($request->get('heure').":".$request->get('minute'));
         $entretien->setType($request->get('type'));
+        $entretien->setEtat(0);
         $em->persist($entretien);
         $em->flush();
         return $this->redirectToRoute('listcandidats');
