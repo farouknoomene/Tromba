@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<table border="1">
+    <thead>
+    <tr>
+        <td>Nom</td>
+        <td>Prenom</td>
+        <td>Type</td>
+        <td>Date</td>
+        <td>Heure</td>
+    </tr>
+    </thead>
+    <tbody>
+    {% for i in list %}
+        <tr>
+            <td>{{ i.cin.nom }}</td>
+            <td>{{ i.cin.prenom }}</td>
+            <td>{{ i.type }}</td>
+            <td>{{ i.date|date("Y-m-d") }}</td>
+            <td>{{ i.heure }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

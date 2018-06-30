@@ -36,4 +36,10 @@ class DefaultController extends Controller
         $em->flush();
         return $this->redirectToRoute('listcandidats');
     }
+
+    public function showEntretiensAction(Request $request){
+        $em = $this->getDoctrine()->getManager();
+        $list = $em->getRepository(Entretient::class)->findAllOrderedByName();
+        return $this->render('RHBundle:Default:listEntretients.html.twig',array("list" => $list));
+    }
 }

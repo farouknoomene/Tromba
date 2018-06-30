@@ -117,6 +117,11 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'Esprit\\RHBundle\\Controller\\DefaultController::listCandidatsAction',  '_route' => 'listcandidats',);
         }
 
+        // listentretients
+        if ('/listEntre' === $pathinfo) {
+            return array (  '_controller' => 'Esprit\\RHBundle\\Controller\\DefaultController::showEntretiensAction',  '_route' => 'listentretients',);
+        }
+
         if (0 === strpos($pathinfo, '/affecter')) {
             // showformentretient
             if (preg_match('#^/affecter/(?P<cin>[^/]++)$#s', $pathinfo, $matches)) {

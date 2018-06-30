@@ -14,3 +14,7 @@ affecterentredb:
     path: /affectertoDb/{cin}
     defaults: { _controller:  RHBundle:Default:affecterDB }
 
+listentretients:
+    path: /listEntre
+    defaults:  { _controller:  RHBundle:Default:showEntretiens}
+

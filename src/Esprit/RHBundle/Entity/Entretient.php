@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Entretient
  *
  * @ORM\Table(name="entretient", indexes={@ORM\Index(name="cin", columns={"cin"})})
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="Esprit\RHBundle\Repository\EntretientsRepository")
  */
 class Entretient
 {
